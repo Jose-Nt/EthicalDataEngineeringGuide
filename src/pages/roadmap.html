@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Roadmap Ético de Engenharia de Dados</title>
+  <link rel="stylesheet" href="../styles/roadmap.css" />
+  <link rel="icon" href="../images/ico.png" type="image/x-icon" />
+</head>
+<body>
+
+    <header class="hero">
+    <h1>Roadmap - Dilemas éticos</h1>
+    <p>Um estudo de caso guiado por princípios de privacidade e responsabilidade. Aqui é possível visualizar um roadmap com um estudo de caso específico, são feitas diversas reflexões e orientações de ações a serem tomadas em determinados casos. Clique em "começar" para iniciar a jornada pelo roadmap!</p>
+    <button id="start-btn" class="start-btn">Começar</button>
+    </header>
+
+  <main class="roadmap">
+
+    <section class="step">
+      <div class="step-content">
+        <div class="step-image">
+          <img src="../images/new-idea-animate.svg" alt="Contextualização" />
+        </div>
+        <div class="step-text">
+          <h2>1: Qual foi a ideia da vez?</h2>
+          <p>Uma startup (sempre uma startup...) deseja analisar a reputação de marcas e produtos por meio de avaliações em e-commerces utilizando web scraping. O que já podemos observar aqui?</p>
+          <p>Apesar do potencial de gerar insights, essa prática envolve riscos legais e éticos sobre privacidade. Mas quais exatamente são esses problemas?</p>
+          <button class="next-btn">Próximo passo →</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="step">
+      <div class="step-content">
+        <div class="step-image">
+          <img src="../images/thinking-face-animate.svg" alt="Dados Públicos vs Sensíveis" />
+        </div>
+        <div class="step-text">
+          <h2>2: Qual o problema?</h2>
+          <p>O problema é o seguinte:</p>
+          <p>Comentários e avaliações podem ser considerados públicos, mas também podem conter dados pessoais como nomes ou imagens. Mesmo públicos, esses dados são regulados pela LGPD .Acabamos de entrar em um dilema ético e legal!</p>
+          <button class="next-btn">Próximo passo →</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="step">
+      <div class="step-content">
+        <div class="step-image">
+          <img src="../images/warning-animate.svg" alt="Temos riscos éticos" />
+        </div>
+        <div class="step-text">
+          <h2>3: Riscos Éticos</h2>
+          <p>A LGPD exige base legal para uso de dados. </p>
+          <p>Podemos nos questionar: “Só porque é possível extrair, significa que devo?”. O uso sem consentimento pode ser inadequado. O legítimo interesse deve ser avaliado cuidadosamente.</p>
+          <button class="next-btn">Próximo passo →</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="step">
+    <div class="step-content">
+        <div class="step-image">
+        <img src="../images/maintenance-animate.svg" alt="Ferramentas Éticas" />
+        </div>
+        <div class="step-text">
+        <h2>4: E as ferramentas, são inocentes?</h2>
+        <p>Web scraping não é magia: são scripts, bibliotecas e requisições. E sim, dá pra ser ético até na escolha das ferramentas.</p>
+        <p>Ignorar o <code>robots.txt</code> e bombardear o site com requisições é como entrar pela janela de alguém e ainda levar o sofá. Não é só feio, é arriscado.</p>
+        <p>Prefira soluções que respeitem limites, evitem sobrecarga e permitam anonimizar o que for sensível. Ética começa no terminal!</p>
+        <button class="next-btn">Próximo passo →</button>
+        </div>
+    </div>
+    </section>
+
+    <section class="step">
+    <div class="step-content">
+        <div class="step-image">
+        <img src="../images/data-processing-animate-2.svg" alt="Processamento Responsável" />
+        </div>
+        <div class="step-text">
+        <h2>5: Vou processar os dados. Mas...?</h2>
+        <p>Beleza, você raspou os dados. E agora? Vai despejar tudo num DataFrame e correr pro abraço?</p>
+        <p>Não. Hora de respirar fundo e perguntar: tem nome de pessoa? Imagem de perfil? Localização? Se sim, então é pessoal. E pessoal, segundo a LGPD, requer responsabilidade.</p>
+        <p>Use técnicas de anonimização e descarte o que não for essencial. O objetivo é extrair conhecimento, não invadir a vida alheia.</p>
+        <button class="next-btn">Próximo passo →</button>
+        </div>
+    </div>
+    </section>
+
+    <section class="step">
+    <div class="step-content">
+        <div class="step-image">
+        <img src="../images/security-on-animate.svg" alt="Segurança" />
+        </div>
+        <div class="step-text">
+        <h2>6: Segurança não é opcional</h2>
+        <p>Os dados que você coletou estão seguros? Ou estão largados em algum bucket ou repositório público?</p>
+        <p>Criptografia, controle de acesso e log de auditoria não são frescura. São exigências básicas se você está lidando com qualquer tipo de dado pessoal.</p>
+        <p>E lembre-se: se vazar, a LGPD não quer saber se “foi sem querer”. Vai doer no bolso e na reputação.</p>
+        <button class="next-btn">Próximo passo →</button>
+        </div>
+    </div>
+    </section>
+
+    <section class="step">
+    <div class="step-content">
+        <div class="step-image">
+        <img src="../images/brand-communication-animate.svg" alt="Stakeholders" />
+        </div>
+        <div class="step-text">
+        <h2>7: Comunicação!</h2>
+        <p>Você avisou algum responsável que estava coletando dados? Se não, temos uma problema aí...</p>
+        <p>Mesmo que os dados sejam públicos, transparência nunca é demais. Criar políticas claras de uso e, se possível, avisar a plataforma-alvo mostra que você está jogando limpo.</p>
+        <p>Documentação de código e processos pode ajudar muito nessa transparência!</p>
+        <button class="next-btn">Próximo passo →</button>
+        </div>
+    </div>
+    </section>
+
+    <section class="step">
+    <div class="step-content">
+        <div class="step-image">
+        <img src="../images/to-do-list-animate.svg" alt="Auditoria Ética" />
+        </div>
+        <div class="step-text">
+        <h2>8: Revisar e revisar e revisar...</h2>
+        <p>“Já revisei tudo na primeira semana!” Que ótimo, porém isso não é o suficiente.</p>
+        <p>A ética precisa de manutenção. Ferramentas mudam, leis mudam, o site que você raspava muda. O que era aceitável ontem pode ser problemático amanhã.</p>
+        <p>Auditorias regulares ajudam a manter o projeto alinhado com a LGPD e com a consciência tranquila.</p>
+        <button class="next-btn">Próximo passo →</button>
+        </div>
+    </div>
+    </section>
+
+    <section class="step">
+    <div class="step-content">
+        <div class="step-image">
+        <img src="../images/oh-no-animate.svg" alt="Incidentes" />
+        </div>
+        <div class="step-text">
+        <h2>9: E se der ruim?</h2>
+        <p>Sim, pode dar ruim. Vazamento, acesso indevido, uso distorcido das informações…</p>
+        <p>É por isso que você precisa de um plano: protocolos de resposta, canais de comunicação, equipe preparada.</p>
+        <p>A LGPD exige notificação rápida e ação eficaz. E a ética exige que você não jogue a culpa no estagiário.</p>
+        <button class="next-btn">Próximo passo →</button>
+        </div>
+    </div>
+    </section>
+
+    <section class="step">
+    <div class="step-content">
+        <div class="step-image">
+        <img src="../images/finish-line-animate.svg" alt="Lições aprendidas" />
+        </div>
+        <div class="step-text">
+        <h2>10: O que teríamos no final?</h2>
+        <p>A ideia da startup pode ser feita, mas com alguns poréns: Escolhemos ferramentas éticas (não irgnore o robots.txt!), garantimos a anonimicidade das informações, temos uma estrutura de segurança robusta, fizemos as comunicações necessárias e por fim revisamos e protocolamos tudo!</p>
+        <p>Agora sim, temos a nossa base de dados pronta para uso em projetos!</p>
+        <p>Ou talvez não... devemos reconhecer os limites e que, as vezes, a tarefa simplesmente não é ética e até mesmo ilegal!</p>
+        </div>
+    </div>
+    </section>
+
+    <a href="../index.html" class="back-btn">Voltar à página inicial</a>
+
+  </main>
+
+  <script src="../scripts/roadmap.js"></script>
+</body>
+</html>

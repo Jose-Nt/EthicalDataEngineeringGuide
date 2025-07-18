@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz de Engenharia de Dados Ética</title>
+  <link rel="stylesheet" href="../styles/quiz.css" />
+</head>
+<body>
+
+    <div id="intro-overlay" class="overlay">
+    <div class="overlay-content intro-content">
+        <img src="../images/customer-survey-animate.svg" alt="Introdução" class="intro-image" />
+        <p>Bem-vindo ao Quiz de Engenharia de Dados Ética! Aqui você poderá testar seus conhecimentos sobre práticas responsáveis na área de dados.</p>
+        <button id="start-quiz-btn" class="start-btn">Vamos começar!</button>
+    </div>
+    </div>
+
+  <main class="quiz-container">
+    <h1>🧠 Quiz: Engenharia de Dados Ética</h1>
+    <form id="quiz-form">
+
+      <div class="question">
+        <p>1. Qual é um risco importante ao aplicar web scraping em sites de avaliações?</p>
+        <div class="options">
+          <label class="option"><input type="radio" name="q1" value="a"> Apenas perda de desempenho do servidor</label>
+          <label class="option"><input type="radio" name="q1" value="b"> Violação de normas legais se houver dados pessoais envolvidos</label>
+          <label class="option"><input type="radio" name="q1" value="c"> Redução de vendas dos produtos analisados</label>
+          <label class="option"><input type="radio" name="q1" value="d"> Risco técnico irrelevante, pois é uma prática comum</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p>2. Qual informação pode tornar um comentário público um dado pessoal?</p>
+        <div class="options">
+          <label class="option"><input type="radio" name="q2" value="a"> A opinião expressa no comentário</label>
+          <label class="option"><input type="radio" name="q2" value="b"> A data da publicação</label>
+          <label class="option"><input type="radio" name="q2" value="c"> A presença de apelido ou nome do autor</label>
+          <label class="option"><input type="radio" name="q2" value="d"> O número de estrelas atribuídas</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p>3. Qual das opções representa uma escolha ética ao configurar ferramentas de scraping?</p>
+        <div class="options">
+          <label class="option"><input type="radio" name="q3" value="a"> Ignorar limitações técnicas para garantir 100% de coleta</label>
+          <label class="option"><input type="radio" name="q3" value="b"> Utilizar proxy para burlar identificadores de scrappers</label>
+          <label class="option"><input type="radio" name="q3" value="c"> Respeitar o arquivo robots.txt e limitar a frequência de acessos</label>
+          <label class="option"><input type="radio" name="q3" value="d"> Fazer scraping simultâneo de múltiplos domínios sem aviso prévio</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p>4. Qual ação indica um uso responsável dos dados após a coleta?</p>
+        <div class="options">
+          <label class="option"><input type="radio" name="q4" value="a"> Compartilhar os dados com parceiros comerciais interessados</label>
+          <label class="option"><input type="radio" name="q4" value="b"> Armazenar os dados indefinidamente para futuras análises</label>
+          <label class="option"><input type="radio" name="q4" value="c"> Anonimizar dados pessoais para evitar identificação direta</label>
+          <label class="option"><input type="radio" name="q4" value="d"> Vender dados para terceiros sem consentimento</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p>5. Por que é importante comunicar stakeholders sobre a coleta de dados?</p>
+        <div class="options">
+          <label class="option"><input type="radio" name="q5" value="a"> Para melhorar a publicidade e marketing</label>
+          <label class="option"><input type="radio" name="q5" value="b"> Para criar vínculos comerciais</label>
+          <label class="option"><input type="radio" name="q5" value="c"> Para manter a transparência e a confiança</label>
+          <label class="option"><input type="radio" name="q5" value="d"> Para promover a empresa em redes sociais</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p>6. Como agir diante de uma violação ética de dados?</p>
+        <div class="options">
+          <label class="option"><input type="radio" name="q6" value="a"> Ignorar e continuar o projeto normalmente</label>
+          <label class="option"><input type="radio" name="q6" value="b"> Ocultar o incidente para evitar má publicidade</label>
+          <label class="option"><input type="radio" name="q6" value="c"> Notificar usuários e autoridades conforme a LGPD</label>
+          <label class="option"><input type="radio" name="q6" value="d"> Desistir completamente do projeto</label>
+        </div>
+      </div>
+
+      <button type="submit" class="submit-btn">🎯 Enviar Respostas</button>
+    </form>
+
+    <div id="overlay" class="overlay hidden">
+      <div class="overlay-content">
+        <p id="overlay-message"></p>
+        <a href="../index.html" class="btn-retornar">Voltar à Página Inicial</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="../scripts/quiz.js"></script>
+</body>
+</html>

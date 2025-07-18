@@ -1,0 +1,186 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f4ff;
+  margin: 0;
+  padding: 0;
+}
+
+.quiz-container {
+  max-width: 720px;
+  margin: 60px auto;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.6s ease-out;
+}
+
+h1 {
+  margin-top: 60px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 50px;
+}
+
+.question {
+  margin-bottom: 30px;
+  animation: fadeInUp 0.4s ease-in-out;
+}
+
+.question p {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.option {
+  background-color: #e3f2fd;
+  padding: 12px 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.option:hover {
+  background-color: #bbdefb;
+}
+
+.option input[type="radio"] {
+  display: none;
+}
+
+.option.selected {
+  background-color: #4dbd90;
+  color: #fff;
+  border-color: #388e7d;
+}
+
+.submit-btn {
+  display: block;
+  margin: 40px auto 0;
+  background-color: #4dbd90;
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #388e7d;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.overlay.hidden {
+  display: none;
+}
+
+.overlay-content {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+#overlay-message {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.btn-retornar {
+  display: inline-block;
+  background-color: #388e7d;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-retornar:hover {
+  background-color: #2e7869;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.overlay-content {
+  background: white;
+  padding: 30px;
+  max-width: 400px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.intro-content p {
+  margin: 20px 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.intro-image {
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.start-btn {
+  background-color: #f5c518;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.start-btn:hover {
+  background-color: #d3aa15;
+}
