@@ -1,4 +1,4 @@
-# Engenharia de Dados Ética — Projeto Web
+# Engenharia de Dados Ética — Aplicativo Web
 
 Este projeto se trata de um App Web educativo e interativo que aborda conceitos fundamentais sobre **Engenharia de Dados com foco em Ética**. Ele foi desenvolvido utilizando apenas **HTML**, **CSS** e **JavaScript puro**, sem o uso de frameworks ou bibliotecas externas.
 
